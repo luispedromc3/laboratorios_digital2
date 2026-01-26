@@ -1,0 +1,575 @@
+
+Laboratorio1.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  00000424  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000003b0  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          0000000a  00800100  00800100  00000424  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00000424  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000454  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000040  00000000  00000000  00000494  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00000a77  00000000  00000000  000004d4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000917  00000000  00000000  00000f4b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   000004b2  00000000  00000000  00001862  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  000000a8  00000000  00000000  00001d14  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000512  00000000  00000000  00001dbc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    000000e8  00000000  00000000  000022ce  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000030  00000000  00000000  000023b6  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 5a 00 	jmp	0xb4	; 0xb4 <__ctors_end>
+   4:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+   8:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+   c:	0c 94 2a 01 	jmp	0x254	; 0x254 <__vector_3>
+  10:	0c 94 bd 00 	jmp	0x17a	; 0x17a <__vector_4>
+  14:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  18:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  1c:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  20:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  24:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  28:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  2c:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  30:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  34:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  38:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  3c:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  40:	0c 94 54 01 	jmp	0x2a8	; 0x2a8 <__vector_16>
+  44:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  48:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  4c:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  50:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  54:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  58:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  5c:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  60:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  64:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  68:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  6c:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  70:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  74:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  78:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  7c:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  80:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  84:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  88:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  8c:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  90:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  94:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  98:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  9c:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  a0:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  a4:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  a8:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  ac:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+  b0:	0c 94 6c 00 	jmp	0xd8	; 0xd8 <__bad_interrupt>
+
+000000b4 <__ctors_end>:
+  b4:	11 24       	eor	r1, r1
+  b6:	1f be       	out	0x3f, r1	; 63
+  b8:	cf ef       	ldi	r28, 0xFF	; 255
+  ba:	d8 e0       	ldi	r29, 0x08	; 8
+  bc:	de bf       	out	0x3e, r29	; 62
+  be:	cd bf       	out	0x3d, r28	; 61
+
+000000c0 <__do_clear_bss>:
+  c0:	21 e0       	ldi	r18, 0x01	; 1
+  c2:	a0 e0       	ldi	r26, 0x00	; 0
+  c4:	b1 e0       	ldi	r27, 0x01	; 1
+  c6:	01 c0       	rjmp	.+2      	; 0xca <.do_clear_bss_start>
+
+000000c8 <.do_clear_bss_loop>:
+  c8:	1d 92       	st	X+, r1
+
+000000ca <.do_clear_bss_start>:
+  ca:	aa 30       	cpi	r26, 0x0A	; 10
+  cc:	b2 07       	cpc	r27, r18
+  ce:	e1 f7       	brne	.-8      	; 0xc8 <.do_clear_bss_loop>
+  d0:	0e 94 ba 00 	call	0x174	; 0x174 <main>
+  d4:	0c 94 d6 01 	jmp	0x3ac	; 0x3ac <_exit>
+
+000000d8 <__bad_interrupt>:
+  d8:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+000000dc <setup>:
+	}
+}
+/****************************************/
+// NON-Interrupt subroutines
+void setup(){
+	cli();
+  dc:	f8 94       	cli
+	UCSR0B = 0;  
+  de:	10 92 c1 00 	sts	0x00C1, r1	; 0x8000c1 <__TEXT_REGION_LENGTH__+0x7f80c1>
+	//Definir entradas y salidas (DDR = 1 salida , DDR = 0 entrada)
+	DDRC = 0;
+  e2:	17 b8       	out	0x07, r1	; 7
+	DDRC |= (1 << PORTC0)|(1 << PORTC1)|(1 << PORTC2)|(1 << PORTC3); // activo las salidas 
+  e4:	87 b1       	in	r24, 0x07	; 7
+  e6:	8f 60       	ori	r24, 0x0F	; 15
+  e8:	87 b9       	out	0x07, r24	; 7
+	PORTC = 0XFF; // activo pullups
+  ea:	8f ef       	ldi	r24, 0xFF	; 255
+  ec:	88 b9       	out	0x08, r24	; 8
+	PORTC &= ~( (1 << PORTC0)|(1 << PORTC1)|(1 << PORTC2)|(1 << PORTC3)); // salidas inicialmente apagadas
+  ee:	98 b1       	in	r25, 0x08	; 8
+  f0:	90 7f       	andi	r25, 0xF0	; 240
+  f2:	98 b9       	out	0x08, r25	; 8
+	
+	DDRD = 0xFF;
+  f4:	8a b9       	out	0x0a, r24	; 10
+	PORTD = 0;
+  f6:	1b b8       	out	0x0b, r1	; 11
+	
+	//INTERRUPCION DE PINCHANGE
+	// Habilitar interrupciones Pin Change para PORTC
+	PCICR |= (1 << PCIE1);
+  f8:	e8 e6       	ldi	r30, 0x68	; 104
+  fa:	f0 e0       	ldi	r31, 0x00	; 0
+  fc:	90 81       	ld	r25, Z
+  fe:	92 60       	ori	r25, 0x02	; 2
+ 100:	90 83       	st	Z, r25
+
+	// Habilitar interrupción en PC4 y PC5 (PCINT12)
+	PCMSK1 |= (1 << PCINT12)|(1 << PCINT13);
+ 102:	ac e6       	ldi	r26, 0x6C	; 108
+ 104:	b0 e0       	ldi	r27, 0x00	; 0
+ 106:	9c 91       	ld	r25, X
+ 108:	90 63       	ori	r25, 0x30	; 48
+ 10a:	9c 93       	st	X, r25
+	 // PB4 como entrada y el resto salidas
+	DDRB = 0xFF;
+ 10c:	84 b9       	out	0x04, r24	; 4
+	DDRB &= ~(1 << PB4);
+ 10e:	84 b1       	in	r24, 0x04	; 4
+ 110:	8f 7e       	andi	r24, 0xEF	; 239
+ 112:	84 b9       	out	0x04, r24	; 4
+
+	// Pull-up interno y salidas apagadas
+	PORTB = 0;
+ 114:	15 b8       	out	0x05, r1	; 5
+	PORTB |= (1 << PB4);
+ 116:	85 b1       	in	r24, 0x05	; 5
+ 118:	80 61       	ori	r24, 0x10	; 16
+ 11a:	85 b9       	out	0x05, r24	; 5
+	// Habilitar grupo PCINT0
+	PCICR |= (1 << PCIE0);
+ 11c:	80 81       	ld	r24, Z
+ 11e:	81 60       	ori	r24, 0x01	; 1
+ 120:	80 83       	st	Z, r24
+	// Habilitar PCINT5 (PB5)
+	PCMSK0 |= (1 << PCINT4);
+ 122:	eb e6       	ldi	r30, 0x6B	; 107
+ 124:	f0 e0       	ldi	r31, 0x00	; 0
+ 126:	80 81       	ld	r24, Z
+ 128:	80 61       	ori	r24, 0x10	; 16
+ 12a:	80 83       	st	Z, r24
+	//INTERRUPCION DE TIMER0
+	// Modo Normal
+	TCCR0A = 0;
+ 12c:	14 bc       	out	0x24, r1	; 36
+	TCCR0B = 0;
+ 12e:	15 bc       	out	0x25, r1	; 37
+
+	TCNT0 = 6; // Reiniciar contador
+ 130:	86 e0       	ldi	r24, 0x06	; 6
+ 132:	86 bd       	out	0x26, r24	; 38
+
+	// Prescaler = 64
+	// Frecuencia del timer = 16 MHz / 64 = 250 kHz
+	TCCR0B |= (1 << CS01) | (1 << CS00);
+ 134:	85 b5       	in	r24, 0x25	; 37
+ 136:	83 60       	ori	r24, 0x03	; 3
+ 138:	85 bd       	out	0x25, r24	; 37
+
+	// Habilitar interrupción por overflow
+	TIMSK0 |= (1 << TOIE0);
+ 13a:	ee e6       	ldi	r30, 0x6E	; 110
+ 13c:	f0 e0       	ldi	r31, 0x00	; 0
+ 13e:	80 81       	ld	r24, Z
+ 140:	81 60       	ori	r24, 0x01	; 1
+ 142:	80 83       	st	Z, r24
+	
+	//inicializar banderas
+	contador_pb = 0;
+ 144:	10 92 09 01 	sts	0x0109, r1	; 0x800109 <contador_pb>
+	contador_timer = 0;
+ 148:	10 92 05 01 	sts	0x0105, r1	; 0x800105 <contador_timer+0x1>
+ 14c:	10 92 04 01 	sts	0x0104, r1	; 0x800104 <contador_timer>
+	contador_display = 5;
+ 150:	85 e0       	ldi	r24, 0x05	; 5
+ 152:	90 e0       	ldi	r25, 0x00	; 0
+ 154:	90 93 03 01 	sts	0x0103, r25	; 0x800103 <contador_display+0x1>
+ 158:	80 93 02 01 	sts	0x0102, r24	; 0x800102 <contador_display>
+	bandera_display = 0;
+ 15c:	10 92 01 01 	sts	0x0101, r1	; 0x800101 <bandera_display>
+	bandera_start = 0;
+ 160:	10 92 00 01 	sts	0x0100, r1	; 0x800100 <__DATA_REGION_ORIGIN__>
+	contador_amarillo = 0;
+ 164:	10 92 06 01 	sts	0x0106, r1	; 0x800106 <contador_amarillo>
+	contador_rojo = 0;
+ 168:	10 92 07 01 	sts	0x0107, r1	; 0x800107 <contador_rojo>
+	contador_pb5 = 0;
+ 16c:	10 92 08 01 	sts	0x0108, r1	; 0x800108 <contador_pb5>
+	sei(); // Habilitar interrupciones globales
+ 170:	78 94       	sei
+ 172:	08 95       	ret
+
+00000174 <main>:
+void setup();
+/****************************************/
+// Main Function
+int main(void)
+{
+	setup();
+ 174:	0e 94 6e 00 	call	0xdc	; 0xdc <setup>
+ 178:	ff cf       	rjmp	.-2      	; 0x178 <main+0x4>
+
+0000017a <__vector_4>:
+	contador_pb5 = 0;
+	sei(); // Habilitar interrupciones globales
+}
+/****************************************/
+// Interrupt routines
+ISR(PCINT1_vect) {
+ 17a:	1f 92       	push	r1
+ 17c:	0f 92       	push	r0
+ 17e:	0f b6       	in	r0, 0x3f	; 63
+ 180:	0f 92       	push	r0
+ 182:	11 24       	eor	r1, r1
+ 184:	8f 93       	push	r24
+ 186:	9f 93       	push	r25
+	// Se ejecuta cuando PC4 cambia de estado (0?1 o 1?0)
+	
+	contador_pb++;
+ 188:	80 91 09 01 	lds	r24, 0x0109	; 0x800109 <contador_pb>
+ 18c:	8f 5f       	subi	r24, 0xFF	; 255
+ 18e:	80 93 09 01 	sts	0x0109, r24	; 0x800109 <contador_pb>
+	if (contador_pb == 1){
+ 192:	81 30       	cpi	r24, 0x01	; 1
+ 194:	09 f0       	breq	.+2      	; 0x198 <__vector_4+0x1e>
+ 196:	55 c0       	rjmp	.+170    	; 0x242 <__vector_4+0xc8>
+		//PORTC ^= (1 << PORTC0);
+		
+		if (!(PINC & (1 << PORTC4))) { // Si PC4 es presionado (LOW)
+ 198:	34 99       	sbic	0x06, 4	; 6
+ 19a:	29 c0       	rjmp	.+82     	; 0x1ee <__vector_4+0x74>
+			//PORTC ^= (1 << PORTC3);
+			if (bandera_start == 1){
+ 19c:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 1a0:	81 30       	cpi	r24, 0x01	; 1
+ 1a2:	09 f0       	breq	.+2      	; 0x1a6 <__vector_4+0x2c>
+ 1a4:	50 c0       	rjmp	.+160    	; 0x246 <__vector_4+0xcc>
+				contador_amarillo++;
+ 1a6:	80 91 06 01 	lds	r24, 0x0106	; 0x800106 <contador_amarillo>
+ 1aa:	8f 5f       	subi	r24, 0xFF	; 255
+ 1ac:	80 93 06 01 	sts	0x0106, r24	; 0x800106 <contador_amarillo>
+				if(contador_amarillo <= 14){
+ 1b0:	8f 30       	cpi	r24, 0x0F	; 15
+ 1b2:	30 f4       	brcc	.+12     	; 0x1c0 <__vector_4+0x46>
+					PORTC = (PORTC & 0xF0) | (contador_amarillo & 0x0F);
+ 1b4:	98 b1       	in	r25, 0x08	; 8
+ 1b6:	90 7f       	andi	r25, 0xF0	; 240
+ 1b8:	8f 70       	andi	r24, 0x0F	; 15
+ 1ba:	89 2b       	or	r24, r25
+ 1bc:	88 b9       	out	0x08, r24	; 8
+ 1be:	43 c0       	rjmp	.+134    	; 0x246 <__vector_4+0xcc>
+				}else{
+					bandera_start = 0;
+ 1c0:	10 92 00 01 	sts	0x0100, r1	; 0x800100 <__DATA_REGION_ORIGIN__>
+					// ganador 2
+					PORTC = (PORTC & 0xF0) | (0xFF & 0x0F);
+ 1c4:	88 b1       	in	r24, 0x08	; 8
+ 1c6:	8f 60       	ori	r24, 0x0F	; 15
+ 1c8:	88 b9       	out	0x08, r24	; 8
+					PORTB = (PORTB & 0xF0) | (0x00 & 0x0F);
+ 1ca:	85 b1       	in	r24, 0x05	; 5
+ 1cc:	80 7f       	andi	r24, 0xF0	; 240
+ 1ce:	85 b9       	out	0x05, r24	; 5
+					PORTD = 0b11011100;
+ 1d0:	8c ed       	ldi	r24, 0xDC	; 220
+ 1d2:	8b b9       	out	0x0b, r24	; 11
+					bandera_display = 0;
+ 1d4:	10 92 01 01 	sts	0x0101, r1	; 0x800101 <bandera_display>
+					contador_display = 5;
+ 1d8:	85 e0       	ldi	r24, 0x05	; 5
+ 1da:	90 e0       	ldi	r25, 0x00	; 0
+ 1dc:	90 93 03 01 	sts	0x0103, r25	; 0x800103 <contador_display+0x1>
+ 1e0:	80 93 02 01 	sts	0x0102, r24	; 0x800102 <contador_display>
+					contador_amarillo = 0;
+ 1e4:	10 92 06 01 	sts	0x0106, r1	; 0x800106 <contador_amarillo>
+					contador_rojo = 0;
+ 1e8:	10 92 07 01 	sts	0x0107, r1	; 0x800107 <contador_rojo>
+ 1ec:	2c c0       	rjmp	.+88     	; 0x246 <__vector_4+0xcc>
+				}
+				
+			}
+		}else if (!(PINC & (1 << PORTC5))) { // Si PC5 es presionado (LOW)
+ 1ee:	35 99       	sbic	0x06, 5	; 6
+ 1f0:	2a c0       	rjmp	.+84     	; 0x246 <__vector_4+0xcc>
+			//PORTC ^= (1 << PORTC2);
+			if (bandera_start == 1){
+ 1f2:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 1f6:	81 30       	cpi	r24, 0x01	; 1
+ 1f8:	31 f5       	brne	.+76     	; 0x246 <__vector_4+0xcc>
+				contador_rojo++;
+ 1fa:	80 91 07 01 	lds	r24, 0x0107	; 0x800107 <contador_rojo>
+ 1fe:	8f 5f       	subi	r24, 0xFF	; 255
+ 200:	80 93 07 01 	sts	0x0107, r24	; 0x800107 <contador_rojo>
+				if(contador_rojo <= 14){
+ 204:	8f 30       	cpi	r24, 0x0F	; 15
+ 206:	30 f4       	brcc	.+12     	; 0x214 <__vector_4+0x9a>
+					PORTB = (PORTB & 0xF0) | (contador_rojo & 0x0F);
+ 208:	95 b1       	in	r25, 0x05	; 5
+ 20a:	90 7f       	andi	r25, 0xF0	; 240
+ 20c:	8f 70       	andi	r24, 0x0F	; 15
+ 20e:	89 2b       	or	r24, r25
+ 210:	85 b9       	out	0x05, r24	; 5
+ 212:	19 c0       	rjmp	.+50     	; 0x246 <__vector_4+0xcc>
+				}else{
+					bandera_start = 0;
+ 214:	10 92 00 01 	sts	0x0100, r1	; 0x800100 <__DATA_REGION_ORIGIN__>
+					// ganador 1
+					PORTB = (PORTB & 0xF0) | (0xFF & 0x0F);
+ 218:	85 b1       	in	r24, 0x05	; 5
+ 21a:	8f 60       	ori	r24, 0x0F	; 15
+ 21c:	85 b9       	out	0x05, r24	; 5
+					PORTC = (PORTC & 0xF0) | (0x00 & 0x0F);
+ 21e:	88 b1       	in	r24, 0x08	; 8
+ 220:	80 7f       	andi	r24, 0xF0	; 240
+ 222:	88 b9       	out	0x08, r24	; 8
+					PORTD = 0b1000001;
+ 224:	81 e4       	ldi	r24, 0x41	; 65
+ 226:	8b b9       	out	0x0b, r24	; 11
+					bandera_display = 0;
+ 228:	10 92 01 01 	sts	0x0101, r1	; 0x800101 <bandera_display>
+					contador_display = 5;
+ 22c:	85 e0       	ldi	r24, 0x05	; 5
+ 22e:	90 e0       	ldi	r25, 0x00	; 0
+ 230:	90 93 03 01 	sts	0x0103, r25	; 0x800103 <contador_display+0x1>
+ 234:	80 93 02 01 	sts	0x0102, r24	; 0x800102 <contador_display>
+					contador_amarillo = 0;
+ 238:	10 92 06 01 	sts	0x0106, r1	; 0x800106 <contador_amarillo>
+					contador_rojo = 0;
+ 23c:	10 92 07 01 	sts	0x0107, r1	; 0x800107 <contador_rojo>
+ 240:	02 c0       	rjmp	.+4      	; 0x246 <__vector_4+0xcc>
+				}
+				
+			}
+		}
+	} else{
+		contador_pb = 0;
+ 242:	10 92 09 01 	sts	0x0109, r1	; 0x800109 <contador_pb>
+	}
+	
+}
+ 246:	9f 91       	pop	r25
+ 248:	8f 91       	pop	r24
+ 24a:	0f 90       	pop	r0
+ 24c:	0f be       	out	0x3f, r0	; 63
+ 24e:	0f 90       	pop	r0
+ 250:	1f 90       	pop	r1
+ 252:	18 95       	reti
+
+00000254 <__vector_3>:
+ISR(PCINT0_vect) {
+ 254:	1f 92       	push	r1
+ 256:	0f 92       	push	r0
+ 258:	0f b6       	in	r0, 0x3f	; 63
+ 25a:	0f 92       	push	r0
+ 25c:	11 24       	eor	r1, r1
+ 25e:	8f 93       	push	r24
+ 260:	9f 93       	push	r25
+	contador_pb5++;
+ 262:	80 91 08 01 	lds	r24, 0x0108	; 0x800108 <contador_pb5>
+ 266:	8f 5f       	subi	r24, 0xFF	; 255
+ 268:	80 93 08 01 	sts	0x0108, r24	; 0x800108 <contador_pb5>
+	if (contador_pb5 == 1){
+ 26c:	81 30       	cpi	r24, 0x01	; 1
+ 26e:	99 f4       	brne	.+38     	; 0x296 <__vector_3+0x42>
+		if (!(PINB & (1 << PORTB4))) { // Si PB5 es presionado (LOW)
+ 270:	1c 99       	sbic	0x03, 4	; 3
+ 272:	13 c0       	rjmp	.+38     	; 0x29a <__vector_3+0x46>
+			//PORTC ^= (1 << PORTC0);
+			bandera_display = 1;
+ 274:	80 93 01 01 	sts	0x0101, r24	; 0x800101 <bandera_display>
+			PORTB = (PORTB & 0xF0) | (contador_rojo & 0x0F);
+ 278:	85 b1       	in	r24, 0x05	; 5
+ 27a:	90 91 07 01 	lds	r25, 0x0107	; 0x800107 <contador_rojo>
+ 27e:	9f 70       	andi	r25, 0x0F	; 15
+ 280:	80 7f       	andi	r24, 0xF0	; 240
+ 282:	89 2b       	or	r24, r25
+ 284:	85 b9       	out	0x05, r24	; 5
+			PORTC = (PORTC & 0xF0) | (contador_amarillo & 0x0F);
+ 286:	88 b1       	in	r24, 0x08	; 8
+ 288:	90 91 06 01 	lds	r25, 0x0106	; 0x800106 <contador_amarillo>
+ 28c:	9f 70       	andi	r25, 0x0F	; 15
+ 28e:	80 7f       	andi	r24, 0xF0	; 240
+ 290:	89 2b       	or	r24, r25
+ 292:	88 b9       	out	0x08, r24	; 8
+ 294:	02 c0       	rjmp	.+4      	; 0x29a <__vector_3+0x46>
+		}
+	}else{
+		contador_pb5 = 0;
+ 296:	10 92 08 01 	sts	0x0108, r1	; 0x800108 <contador_pb5>
+	}
+	
+}
+ 29a:	9f 91       	pop	r25
+ 29c:	8f 91       	pop	r24
+ 29e:	0f 90       	pop	r0
+ 2a0:	0f be       	out	0x3f, r0	; 63
+ 2a2:	0f 90       	pop	r0
+ 2a4:	1f 90       	pop	r1
+ 2a6:	18 95       	reti
+
+000002a8 <__vector_16>:
+ISR(TIMER0_OVF_vect) {
+ 2a8:	1f 92       	push	r1
+ 2aa:	0f 92       	push	r0
+ 2ac:	0f b6       	in	r0, 0x3f	; 63
+ 2ae:	0f 92       	push	r0
+ 2b0:	11 24       	eor	r1, r1
+ 2b2:	2f 93       	push	r18
+ 2b4:	8f 93       	push	r24
+ 2b6:	9f 93       	push	r25
+	//PORTC ^= (1 << PORTC1);
+	TCNT0 = 6;  // reduce el tiempo hasta el próximo overflow
+ 2b8:	86 e0       	ldi	r24, 0x06	; 6
+ 2ba:	86 bd       	out	0x26, r24	; 38
+	contador_timer++;
+ 2bc:	80 91 04 01 	lds	r24, 0x0104	; 0x800104 <contador_timer>
+ 2c0:	90 91 05 01 	lds	r25, 0x0105	; 0x800105 <contador_timer+0x1>
+ 2c4:	01 96       	adiw	r24, 0x01	; 1
+ 2c6:	90 93 05 01 	sts	0x0105, r25	; 0x800105 <contador_timer+0x1>
+ 2ca:	80 93 04 01 	sts	0x0104, r24	; 0x800104 <contador_timer>
+	if(contador_timer >= 1000){
+ 2ce:	80 91 04 01 	lds	r24, 0x0104	; 0x800104 <contador_timer>
+ 2d2:	90 91 05 01 	lds	r25, 0x0105	; 0x800105 <contador_timer+0x1>
+ 2d6:	88 3e       	cpi	r24, 0xE8	; 232
+ 2d8:	93 40       	sbci	r25, 0x03	; 3
+ 2da:	08 f4       	brcc	.+2      	; 0x2de <__vector_16+0x36>
+ 2dc:	5f c0       	rjmp	.+190    	; 0x39c <__vector_16+0xf4>
+		//PORTC ^= (1 << PORTC1);
+		contador_timer = 0;
+ 2de:	10 92 05 01 	sts	0x0105, r1	; 0x800105 <contador_timer+0x1>
+ 2e2:	10 92 04 01 	sts	0x0104, r1	; 0x800104 <contador_timer>
+		if (bandera_display == 1){
+ 2e6:	80 91 01 01 	lds	r24, 0x0101	; 0x800101 <bandera_display>
+ 2ea:	81 30       	cpi	r24, 0x01	; 1
+ 2ec:	09 f0       	breq	.+2      	; 0x2f0 <__vector_16+0x48>
+ 2ee:	56 c0       	rjmp	.+172    	; 0x39c <__vector_16+0xf4>
+			if (contador_display == 5){
+ 2f0:	80 91 02 01 	lds	r24, 0x0102	; 0x800102 <contador_display>
+ 2f4:	90 91 03 01 	lds	r25, 0x0103	; 0x800103 <contador_display+0x1>
+ 2f8:	85 30       	cpi	r24, 0x05	; 5
+ 2fa:	91 05       	cpc	r25, r1
+ 2fc:	61 f4       	brne	.+24     	; 0x316 <__vector_16+0x6e>
+				PORTD = 0b10111001;
+ 2fe:	89 eb       	ldi	r24, 0xB9	; 185
+ 300:	8b b9       	out	0x0b, r24	; 11
+				contador_display = contador_display - 1;
+ 302:	80 91 02 01 	lds	r24, 0x0102	; 0x800102 <contador_display>
+ 306:	90 91 03 01 	lds	r25, 0x0103	; 0x800103 <contador_display+0x1>
+ 30a:	01 97       	sbiw	r24, 0x01	; 1
+ 30c:	90 93 03 01 	sts	0x0103, r25	; 0x800103 <contador_display+0x1>
+ 310:	80 93 02 01 	sts	0x0102, r24	; 0x800102 <contador_display>
+ 314:	43 c0       	rjmp	.+134    	; 0x39c <__vector_16+0xf4>
+			} else if (contador_display == 4){
+ 316:	84 30       	cpi	r24, 0x04	; 4
+ 318:	91 05       	cpc	r25, r1
+ 31a:	61 f4       	brne	.+24     	; 0x334 <__vector_16+0x8c>
+				PORTD = 0b1110001;
+ 31c:	81 e7       	ldi	r24, 0x71	; 113
+ 31e:	8b b9       	out	0x0b, r24	; 11
+				contador_display = contador_display - 1;
+ 320:	80 91 02 01 	lds	r24, 0x0102	; 0x800102 <contador_display>
+ 324:	90 91 03 01 	lds	r25, 0x0103	; 0x800103 <contador_display+0x1>
+ 328:	01 97       	sbiw	r24, 0x01	; 1
+ 32a:	90 93 03 01 	sts	0x0103, r25	; 0x800103 <contador_display+0x1>
+ 32e:	80 93 02 01 	sts	0x0102, r24	; 0x800102 <contador_display>
+ 332:	34 c0       	rjmp	.+104    	; 0x39c <__vector_16+0xf4>
+			}else if (contador_display == 3){
+ 334:	83 30       	cpi	r24, 0x03	; 3
+ 336:	91 05       	cpc	r25, r1
+ 338:	61 f4       	brne	.+24     	; 0x352 <__vector_16+0xaa>
+				PORTD = 0b11011001;
+ 33a:	89 ed       	ldi	r24, 0xD9	; 217
+ 33c:	8b b9       	out	0x0b, r24	; 11
+				contador_display = contador_display - 1;
+ 33e:	80 91 02 01 	lds	r24, 0x0102	; 0x800102 <contador_display>
+ 342:	90 91 03 01 	lds	r25, 0x0103	; 0x800103 <contador_display+0x1>
+ 346:	01 97       	sbiw	r24, 0x01	; 1
+ 348:	90 93 03 01 	sts	0x0103, r25	; 0x800103 <contador_display+0x1>
+ 34c:	80 93 02 01 	sts	0x0102, r24	; 0x800102 <contador_display>
+ 350:	25 c0       	rjmp	.+74     	; 0x39c <__vector_16+0xf4>
+			}else if (contador_display == 2){
+ 352:	82 30       	cpi	r24, 0x02	; 2
+ 354:	91 05       	cpc	r25, r1
+ 356:	61 f4       	brne	.+24     	; 0x370 <__vector_16+0xc8>
+				PORTD = 0b11011100;
+ 358:	8c ed       	ldi	r24, 0xDC	; 220
+ 35a:	8b b9       	out	0x0b, r24	; 11
+				contador_display = contador_display - 1;
+ 35c:	80 91 02 01 	lds	r24, 0x0102	; 0x800102 <contador_display>
+ 360:	90 91 03 01 	lds	r25, 0x0103	; 0x800103 <contador_display+0x1>
+ 364:	01 97       	sbiw	r24, 0x01	; 1
+ 366:	90 93 03 01 	sts	0x0103, r25	; 0x800103 <contador_display+0x1>
+ 36a:	80 93 02 01 	sts	0x0102, r24	; 0x800102 <contador_display>
+ 36e:	16 c0       	rjmp	.+44     	; 0x39c <__vector_16+0xf4>
+			}else if (contador_display == 1){
+ 370:	81 30       	cpi	r24, 0x01	; 1
+ 372:	91 05       	cpc	r25, r1
+ 374:	61 f4       	brne	.+24     	; 0x38e <__vector_16+0xe6>
+				PORTD = 0b1000001;
+ 376:	81 e4       	ldi	r24, 0x41	; 65
+ 378:	8b b9       	out	0x0b, r24	; 11
+				contador_display = contador_display - 1;
+ 37a:	80 91 02 01 	lds	r24, 0x0102	; 0x800102 <contador_display>
+ 37e:	90 91 03 01 	lds	r25, 0x0103	; 0x800103 <contador_display+0x1>
+ 382:	01 97       	sbiw	r24, 0x01	; 1
+ 384:	90 93 03 01 	sts	0x0103, r25	; 0x800103 <contador_display+0x1>
+ 388:	80 93 02 01 	sts	0x0102, r24	; 0x800102 <contador_display>
+ 38c:	07 c0       	rjmp	.+14     	; 0x39c <__vector_16+0xf4>
+			}else if (contador_display == 0){
+ 38e:	89 2b       	or	r24, r25
+ 390:	29 f4       	brne	.+10     	; 0x39c <__vector_16+0xf4>
+				PORTD = 0b11101101;
+ 392:	8d ee       	ldi	r24, 0xED	; 237
+ 394:	8b b9       	out	0x0b, r24	; 11
+				bandera_start = 1;
+ 396:	81 e0       	ldi	r24, 0x01	; 1
+ 398:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+			}
+		}
+	}
+}
+ 39c:	9f 91       	pop	r25
+ 39e:	8f 91       	pop	r24
+ 3a0:	2f 91       	pop	r18
+ 3a2:	0f 90       	pop	r0
+ 3a4:	0f be       	out	0x3f, r0	; 63
+ 3a6:	0f 90       	pop	r0
+ 3a8:	1f 90       	pop	r1
+ 3aa:	18 95       	reti
+
+000003ac <_exit>:
+ 3ac:	f8 94       	cli
+
+000003ae <__stop_program>:
+ 3ae:	ff cf       	rjmp	.-2      	; 0x3ae <__stop_program>
